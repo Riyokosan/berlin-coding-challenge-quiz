@@ -1,0 +1,12 @@
+body,
+html {
+    margin: 5%;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: rgba(219, 161, 231, 0.8);
+}
