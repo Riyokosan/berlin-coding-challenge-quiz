@@ -1,0 +1,19 @@
+{
+  "name": "bcc-quiz",
+  "version": "1.0.0",
+  "description": "Berlin Coding Challenge - Quiz - Third Challenge",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riyokosan/berlin-coding-challenge-quiz.git"
+  },
+  "author": "Riyokosan - Amélie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riyokosan/berlin-coding-challenge-quiz/issues"
+  },
+  "homepage": "https://github.com/Riyokosan/berlin-coding-challenge-quiz#readme"
+}
