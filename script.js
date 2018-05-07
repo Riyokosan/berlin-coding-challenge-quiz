@@ -3,7 +3,7 @@ window.onload = init();
 function init() {
     var questions = [{
             question: "What is the capital of Germany?",
-            src: "images/Germany.jpg",
+            image: "images/Germany.jpg",
             answers: [
                 { text: "Amsterdam" },
                 { text: "Berlin", isCorrect: true },
@@ -12,7 +12,7 @@ function init() {
         },
         {
             question: "What is the capital of Morocco?",
-            src: "images/Morocco.png",
+            image: "images/Morocco.png",
             answers: [
                 { text: "Nouakchott" },
                 { text: "Rabat", isCorrect: true },
@@ -29,7 +29,7 @@ function init() {
         // },
         {
             question: "What is the capital of Australia?",
-            src: "images/Australia.jpg",
+            image: "images/Australia.jpg",
             answers: [
                 { text: "Canberra", isCorrect: true },
                 { text: "Melbourne" },
@@ -46,7 +46,7 @@ function init() {
         // },
         {
             question: "What is the capital of Paraguay?",
-            src: "images/Paraguay.png",
+            image: "images/Paraguay.png",
             answers: [
                 { text: "Asunción", isCorrect: true },
                 { text: "La Paz" },
@@ -55,7 +55,7 @@ function init() {
         },
         {
             question: "What is the capital of Vietnam?",
-            src: "images/Vietnam.jpg",
+            image: "images/Vietnam.jpg",
             answers: [
                 { text: "Hanoi", isCorrect: true },
                 { text: "Ho Chi Minh City" },
@@ -64,7 +64,7 @@ function init() {
         },
         {
             question: "What is the capital of India?",
-            src: "images/India.png",
+            image: "images/India.png",
             answers: [
                 { text: "Bangalore" },
                 { text: "Bombay" },
@@ -81,7 +81,7 @@ function init() {
         // },
         {
             question: "What is the capital of Colombia?",
-            src: "images/Colombia.jpg",
+            image: "images/Colombia.jpg",
             answers: [
                 { text: "Bogotá", isCorrect: true },
                 { text: "Caracas" },
@@ -106,6 +106,7 @@ function init() {
         var answers = document.querySelector('.answer');
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = questions[iQuestion].answers[i].text;
+            image[i].setElement("src", image[i]);
         }
     }
 
