@@ -87,22 +87,22 @@ function init() {
 
     function updateQuestionAndScore() {
         if (iQuestion >= questions.length) {
-            document.getElementsByClassName('question')[0].outerHTML = '';
-            document.getElementsByClassName('answer')[2].outerHTML = '';
-            document.getElementsByClassName('answer')[1].outerHTML = '';
-            document.getElementsByClassName('answer')[0].outerHTML = '';
+            document.querySelector('#question')[0].outerHTML = '';
+            document.querySelector('.answer')[2].outerHTML = '';
+            document.querySelector('.answer')[1].outerHTML = '';
+            document.querySelector('.answer')[0].outerHTML = '';
             return;
         }
-        document.getElementsByClassName('score')[0].innerHTML = score;
-        document.getElementsByClassName('question')[0].innerHTML = questions[iQuestion].question;
-        var answers = document.getElementsByClassName('answer');
+        document.querySelector('#score')[0].innerHTML = score;
+        document.querySelector('#question')[0].innerHTML = questions[iQuestion].question;
+        var answers = document.querySelector('.answer');
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = questions[iQuestion].answers[i].text;
         }
     }
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        var answers = document.getElementsByClassName('answer');
+        var answers = document.querySelector('.answer');
         for (let i = 0; i < answers.length; i++) {
             answers[i].onclick = function() {
                 if (questions[iQuestion].answers[i].isCorrect) {
