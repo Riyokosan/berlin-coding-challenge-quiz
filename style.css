@@ -1,6 +1,6 @@
 body,
 html {
-    margin: 5%;
+    margin: 2%;
 }
 
 header,
@@ -20,11 +20,21 @@ img {
     margin: 2%;
 }
 
+div {
+    margin: 0 auto;
+}
+
 .fc {
     display: flex;
     flex-flow: row wrap;
 }
 
-.answer {
-    display: block;
+button {
+    min-width: 32%;
+    max-width: 80%;
+    padding: 10px 0;
+}
+
+.middle {
+    margin: 0 15px;
 }

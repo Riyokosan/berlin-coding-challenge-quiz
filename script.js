@@ -103,6 +103,7 @@ function init() {
         }
         document.getElementsByClassName('score')[0].innerHTML = score;
         document.getElementsByClassName('question')[0].innerHTML = questions[iQuestion].question;
+        // document.querySelector('img')[0].setAttribute(src, image[iQuestion].image);
         var answers = document.getElementsByClassName('answer');
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = questions[iQuestion].answers[i].text;
