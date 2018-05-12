@@ -94,24 +94,24 @@ function init() {
 
     function updateQuestionAndScore() {
         if (iQuestion >= questions.length) {
-            document.querySelector('#question')[0].outerHTML = '';
+            document.getElementsByClassName('question')[0].outerHTML = '';
             document.querySelector('img')[0].removeAttribute(src);
-            document.querySelector('.answer')[2].outerHTML = '';
-            document.querySelector('.answer')[1].outerHTML = '';
-            document.querySelector('.answer')[0].outerHTML = '';
+            document.getElementsByClassName('answer')[2].outerHTML = '';
+            document.getElementsByClassName('answer')[1].outerHTML = '';
+            document.getElementsByClassName('answer')[0].outerHTML = '';
             return;
         }
-        document.querySelector('#score')[0].innerHTML = score;
-        document.querySelector('#question')[0].innerHTML = questions[iQuestion].question;
-        var answers = document.querySelector('.answer');
+        document.getElementsByClassName('score')[0].innerHTML = score;
+        document.getElementsByClassName('question')[0].innerHTML = questions[iQuestion].question;
+        var answers = document.getElementsByClassName('answer');
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = questions[iQuestion].answers[i].text;
-            image[i].setElement("src", image[i]);
+            // image[i].setElement("src", image[i]);
         }
     }
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        var answers = document.querySelector('.answer');
+        var answers = document.getElementsByClassName('answer');
         for (let i = 0; i < answers.length; i++) {
             answers[i].onclick = function() {
                 if (questions[iQuestion].answers[i].isCorrect) {

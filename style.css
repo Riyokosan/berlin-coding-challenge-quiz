@@ -3,10 +3,28 @@ html {
     margin: 5%;
 }
 
-header {
+header,
+main {
     text-align: center;
 }
 
 main {
+    padding: 2%;
     background-color: rgba(219, 161, 231, 0.8);
+}
+
+img {
+    max-width: 50%;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 2%;
+}
+
+.fc {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.answer {
+    display: block;
 }
